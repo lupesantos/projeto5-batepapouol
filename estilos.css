@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500&display=swap');
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f3f3f3;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    top: 0;
+    width: 100%;
+    height: 80px;
+    padding: 25px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    background-color:#ffffff;
+    justify-content: space-between;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.05));
+}
+
+header img{
+    width: 75px;
+}
+
+ion-icon{
+    font-size: 42px;
+}
+.entrada{
+    position: fixed;
+    background-color:#ffffff;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    z-index: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+    transition: 1s;
+   
+}
+.esconde{
+    left: 375px;
+}
+.entrada input{
+    width: 261px;
+    height: 54px;
+    background-color: #ffffff;
+    align-self: center;
+    border-radius: 4px;
+    border: 1px solid #D7D7D7;
+}
+
+.entrada input::placeholder{
+    color:#AEAEAE;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+}
+.entrada img{
+    width: 130px;
+    align-self: center;
+}
+.nomebutton{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.button{
+    color: #696969;
+    font-size: 18px;
+    font-weight: 400;
+    width: 109px;
+    height: 45px;
+    border-radius: 9px;
+    background-color: #e7e7e7;
+    align-self: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main1{
+    width: 100%;
+    height:100%;
+    margin-top: 106px;
+    margin-bottom:83px;
+}
+
+footer {
+    bottom: 0;
+    width: 100%;
+    height: 80px;
+    padding: 25px;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    background-color:#ffffff;
+    justify-content: space-between;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.05));
+}
+
+
+li {
+    padding: 10px 8px;
+    margin: 2px 0;
+    height: 100%;
+    display: flex;
+    gap: 5px;
+    border-radius: 2px;
+}
+.status{
+    background-color: #DCDCDC;
+}
+.message{
+    background-color: white;
+}
+p {
+
+    font-size: 14px;
+    color: #aaaaaa;
+    line-height: 20px;
+}
+h1{
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+}
+h2{
+    word-break: break-all;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+footer input::placeholder{
+    color: black;
+}
+
+footer input{
+    border: none;
+    outline-width: 0;
+    font-size: 18px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+footer ion-icon{
+    font-size: 26px;
+}
