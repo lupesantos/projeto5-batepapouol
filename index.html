@@ -11,7 +11,7 @@
 <body>
     <header class="header">
         <img src="./arquivos/logo.png" alt="">
-        <ion-icon name="people"></ion-icon>
+        <ion-icon onclick="toggleSide(),getUsuario()" name="people"></ion-icon>
     </header>
 
     <main class="main">
@@ -22,6 +22,26 @@
                 <div onclick="tecladoTeste(this)" class="button">Entrar</div>
             </div>
         </div>
+        <div class="side">
+            <div onclick="toggleSide()" class="escuro"></div>
+            <div class="lateral">
+                <h1>Escolha um contato para enviar mensagem:</h1>
+                <div class="participantes"></div>
+                <h1>Escolha a visibilidade:</h1>
+                <div class="modo">
+                    <div onclick="selecionado2(this)" class="publico">
+                        <ion-icon name="checkmark"></ion-icon>
+                        <ion-icon name="lock-open"></ion-icon>
+                        <span>Público</span>
+                    </div>
+                    <div onclick="selecionado2(this)" class="reservado">
+                        <ion-icon name="checkmark"></ion-icon>
+                        <ion-icon name="lock-open"></ion-icon>
+                        <span>Reservadamente</span>
+                    </div>
+                </div>
+            </div>
+        </div>
         <ul class="main1">
         </ul>
     </main>
@@ -29,6 +49,7 @@
     <footer class="footer">
         <input type="text" placeholder="Escreva aqui..."class="teclado"/>
         <ion-icon class="ion" onclick="tecladoTeste(this)" name="paper-plane-outline"></ion-icon>
+        <div class="enviando"></div>
     </footer>
     
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
